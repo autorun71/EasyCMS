@@ -177,6 +177,7 @@ return [
         Pkg\ExamplePackage\Providers\ExampleServiceProvider::class,
         Pkg\EasyCms\Template\Providers\TemplateServiceProvider::class,
         Pkg\EasyCms\Site\Home\Providers\HomeServiceProvider::class,
+        \Pkg\EasyCms\Admin\Main\Providers\MainServiceProvider::class,
 
     ],
 

@@ -5,7 +5,7 @@ namespace Pkg\EasyCms\Template\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Pkg\EasyCms\Site\Home\Repositories\MainRepository;
+use Pkg\EasyCms\Admin\Main\Repositories\MainRepository;
 
 
 class MainController extends Controller

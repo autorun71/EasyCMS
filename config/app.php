@@ -174,7 +174,7 @@ return [
         /**
          * Packages Service Providers...
          */
-//        Pkg\ExamplePackage\Providers\ExampleServiceProvider::class,
+        Pkg\ExamplePackage\Providers\ExampleServiceProvider::class,
         Pkg\EasyCms\Template\Providers\TemplateServiceProvider::class,
         Pkg\EasyCms\Site\Home\Providers\HomeServiceProvider::class,
 

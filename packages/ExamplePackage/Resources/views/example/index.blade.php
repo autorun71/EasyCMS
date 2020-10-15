@@ -1,13 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Page</title>
-</head>
-<body>
-<h1>Hello, I'm Example Page!</h1>
-</body>
-</html>
+@extends('tmpl::layouts.site.easy')
+@section('meta')
+    <meta name="test" content="test_content">
+@endsection
+@section('css')
+    <style>
+        .example {
+            color: green;
+            font-size: 32px;
+        }
+    </style>
+@endsection
+@section('js')
+    <script>
+        console.log('ExamplePage::run()')
+    </script>
+@endsection
+
+
+@section('content')
+    <div class="example">Hello, I'm Example Page!</div>
+@endsection

@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -163,10 +163,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
-         * Package Service Providers...
-         */
-
-        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
@@ -174,6 +170,13 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /**
+         * Packages Service Providers...
+         */
+//        Pkg\ExamplePackage\Providers\ExampleServiceProvider::class,
+        Pkg\EasyCms\Template\Providers\TemplateServiceProvider::class,
+        Pkg\EasyCms\Site\Home\Providers\HomeServiceProvider::class,
 
     ],
 

@@ -15,7 +15,7 @@
 @include ('tmpl::layouts.site.header')
 @yield('content')
 @include ('tmpl::layouts.site.footer')
-<script src="{{ asset('assets/js/script.css') }}"></script>
+<script src="{{ asset('assets/js/script.js') }}"></script>
 @yield('js')
 </body>
 </html>

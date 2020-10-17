@@ -1,6 +1,6 @@
 <?php
 
-namespace Pkg\EasyCMS\Site\Database\Seeders;
+namespace Pkg\EasyCMS\Admin\Main\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 // add DatabaseSeeder to database/seeders/DatabaseSeeder.php

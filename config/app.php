@@ -174,9 +174,11 @@ return [
         /**
          * Packages Service Providers...
          */
+        \Pkg\EasyCms\Admin\Main\Providers\AdminServiceProvider::class,
         Pkg\ExamplePackage\Providers\ExampleServiceProvider::class,
         Pkg\EasyCms\Template\Providers\TemplateServiceProvider::class,
         Pkg\EasyCms\Site\Home\Providers\HomeServiceProvider::class,
+
 
     ],
 

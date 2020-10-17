@@ -3,11 +3,13 @@
 @import '../basic/helpers';
 
 .header {
-    height: 60px;
+    position: relative;
+    height: $headerHeight;
     background: #11111d;
     color: #fff;
     display: flex;
     align-items: center;
+    z-index: 100;
 
     .top-menu {
         display: flex;

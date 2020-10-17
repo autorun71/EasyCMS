@@ -6,13 +6,17 @@ $adminBlock: 100px;
 
 .admin-wrapper {
     display: flex;
+
     .left-menu {
         width: $adminBlock;
         border-right: 1px solid #dcdce3;
         height: 100%;
         background: #f3f3f3ab;
         box-shadow: 0px 3px 11px 0px #898992;
-
+        a {
+            color: #000;
+            text-decoration: none;
+        }
         .block {
             display: flex;
             justify-content: center;

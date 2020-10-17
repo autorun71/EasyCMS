@@ -1,0 +1,77 @@
+@import '../basic/vars';
+@import '../basic/colors';
+@import '../basic/helpers';
+
+.login {
+    &-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //border: 1px solid #eee;
+        //border-radius: 10px;
+        padding: $marginContent;
+        width: 400px;
+        color: #fff;
+        height: 400px;
+        text-align: center;
+
+        a {
+            color: $linkColorForHeaderFon;
+        }
+
+        &-wrapper {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -60px;
+            background: #11111d;
+
+        }
+
+        &-card {
+            .card {
+                &-body {
+                    .form {
+                        &-group {
+                            label {
+                                display: block;
+                                font-size: 20px;
+                                margin: 10px;
+                            }
+
+                            input.form-control {
+                                padding: 7px;
+                                width: 250px;
+                                font-size: 17px;
+                                outline: none;
+                                border-radius: 8px;
+                                border: 1px solid #fff;
+                            }
+
+                            .btn {
+                                width: 266px;
+                                margin-top: 5px;
+
+                            }
+                        }
+
+
+                    }
+                }
+
+                &-header {
+                    span {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}

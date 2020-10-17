@@ -1,0 +1,96 @@
+@import '../basic/vars';
+@import '../basic/colors';
+@import '../basic/helpers';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize;
+    font-family: "PF Centro Sans Pro";
+    min-height: 100vh;
+}
+
+/**
+ * Custom radio
+ */
+
+
+/**
+ * Custom checkbox
+ */
+.form {
+    &-check {
+
+        &-input {
+            display: none;
+
+            &:checked + .form-check-label:before {
+                content: "\2713";
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+                font-size: 15px;
+                color: #000;
+                text-align: center;
+                line-height: 15px;
+            }
+        }
+
+        &-label {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                color: #dcdcdc;
+            }
+
+            &:before {
+                display: block;
+                content: " ";
+                border-radius: 3px;
+                width: 15px;
+                height: 15px;
+                background: #fff;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                font-size: 15px;
+                color: #f3f3f3;
+                text-align: center;
+                line-height: 15px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 7px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 6px;
+    border: 0px solid #fff;
+    min-width: 53px;
+    width: 60px;
+
+    &-red {
+        background: red;
+        color: #fff;
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+        }
+    }
+
+    &-green {
+        background: red;
+        color: #fff;
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+        }
+    }
+}
+
+
+
+
+

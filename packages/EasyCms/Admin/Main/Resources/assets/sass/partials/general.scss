@@ -1,14 +1,12 @@
 @import '../basic/vars';
 @import '../basic/colors';
 @import '../basic/helpers';
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
+
+html, body {
     margin: 0;
     padding: 0;
     font-size: $fontSize;
     font-family: "PF Centro Sans Pro";
-    min-height: 100%;
+    min-height: 100vh;
 }
+

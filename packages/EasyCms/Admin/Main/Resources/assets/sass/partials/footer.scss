@@ -10,8 +10,9 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60px;
-    background: #11121e;
+    height: $footerHeight;
+    background: #11111d;
+    z-index: 100;
 
     span {
         color: #fff;

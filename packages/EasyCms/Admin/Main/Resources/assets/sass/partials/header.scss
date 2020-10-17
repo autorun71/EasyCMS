@@ -1,0 +1,41 @@
+@import '../basic/vars';
+@import '../basic/colors';
+@import '../basic/helpers';
+
+.header {
+    height: 60px;
+    background: #11111d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .top-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        div {
+            padding: 5px;
+
+            &.left-content {
+                margin: $marginContent;
+
+                .site-name {
+                    font-size: 22px;
+                    text-shadow: 1px 1px 7px #202134, 0 0 2px #514d4d;
+                }
+            }
+
+
+            &.right-content {
+                margin: $marginContent;
+
+                .user-name {
+                    font-size: 18px;
+                    text-shadow: 1px 1px 7px #202134, 0 0 2px #514d4d;
+                }
+            }
+        }
+    }
+}

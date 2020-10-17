@@ -1,6 +1,6 @@
 <?php
 
-namespace Pkg\EasyCMS\Admin\Main\Database\Seeders;
+namespace Pkg\EasyCms\Admin\Main\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 // add DatabaseSeeder to database/seeders/DatabaseSeeder.php
@@ -13,6 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-//        $this->call(ExampleTableSeeder::class);
+        $this->call(UsersDatabaseSeeder::class);
     }
 }

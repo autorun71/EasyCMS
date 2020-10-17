@@ -13,8 +13,12 @@ class AdminServiceProvider extends ServiceProvider
     {
 //        $this->loadRoutesFrom(__DIR__ . '/../Http/Routes/web.php');
         Route::prefix('admin')
-//            ->middleware('web')
+            ->middleware('auth.admin')
             ->group(__DIR__ . '/../Http/Routes/web.php');
+
+        Route::prefix('admin')
+//            ->middleware('auth.admin')
+            ->group(__DIR__ . '/../Http/Routes/login.php');
 
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'admin');
 

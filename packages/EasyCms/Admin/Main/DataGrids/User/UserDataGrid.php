@@ -48,15 +48,16 @@ class UserDataGrid extends DataGrid
         $this->addColumn([
             'index'      => 'status',
             'label'      => trans('admin::app.datagrid.status'),
-            'type'       => 'boolean',
+            'type'       => 'string',
             'searchable' => true,
-            'sortable'   => true,
+            'sortable' => true,
             'filterable' => true,
+            'closure'    => true,
             'wrapper'    => function($value) {
                 if ($value->status == 1) {
-                    return trans('admin::app.datagrid.active');
+                    return '<span style="color: green">' . trans('admin::app.datagrid.active') . '</span>';
                 } else {
-                    return trans('admin::app.datagrid.inactive');
+                    return '<span style="color: red">' . trans('admin::app.datagrid.inactive') . '</span>';
                 }
             },
         ]);

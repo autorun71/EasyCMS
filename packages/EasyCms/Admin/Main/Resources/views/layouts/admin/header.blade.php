@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="admin-wrapper">
+<div class="admin-wrapper @auth @else no-admin @endif">
 
     @auth
     @include('admin::layouts.admin.left-sidebar')

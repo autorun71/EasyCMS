@@ -270,6 +270,10 @@ html, body {
   width: 100%;
   height: calc(100% - 120px);
 }
+.admin-wrapper.no-admin {
+  position: static;
+  height: 100%;
+}
 .admin-wrapper .left-menu {
   width: 100px;
   border-right: 1px solid #dcdce3;

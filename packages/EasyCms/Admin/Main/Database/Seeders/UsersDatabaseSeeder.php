@@ -15,12 +15,17 @@ class UsersDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        $table = 'users';
+        DB::table($table)->insert([
             'name' => 'admin',
             'email' => 'admin@easy-cms.ru',
+            'status' => 1,
+            'role_id' => 1,
             'password' => bcrypt('admin'),
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
+
+
     }
 }

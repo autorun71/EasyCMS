@@ -1,4 +1,5 @@
 @import '../basic/vars';
+
 @import '../basic/colors';
 @import '../basic/helpers';
 
@@ -92,5 +93,315 @@ html, body {
 
 
 
+.table {
+    width: 100%;
+    // overflow-x: auto !important;
 
+    table {
+        border-collapse: collapse;
+        text-align: left;
+        width: 100%;
+
+        thead th {
+            font-weight: 700;
+            padding: 12px 10px;
+            background: #f8f9fa;
+            color: $font-color;
+        }
+
+        tbody td {
+            padding: 10px;
+            border-bottom: solid 1px #d3d3d3;
+            color: $font-color;
+            vertical-align: top;
+
+            &.actions {
+
+                .action {
+                    display: inline-flex;
+                }
+
+                .icon {
+                    cursor: pointer;
+                    vertical-align: middle;
+                }
+            }
+
+            &.empty {
+                text-align: center;
+            }
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    }
+
+    .control-group {
+        width: 100%;
+        margin-bottom: 0;
+        min-width: 140px;
+
+        .control {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.pagination {
+    .page-item {
+        background: #ffffff;
+        border: 2px solid $control-border-color;
+        border-radius: 3px;
+        padding: 7px 14px;
+        margin-right: 5px;
+        font-size: 16px;
+        display: inline-block;
+        color: #8e8e8e;
+        vertical-align: middle;
+        text-decoration: none;
+
+        &.previous,
+        &.next {
+            padding: 6px 9px;
+        }
+
+        &.active {
+            background: #0041ff;
+            color: #fff;
+            border-color: #0041ff;
+        }
+
+        .icon {
+            vertical-align: middle;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+
+.control-group {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #333333;
+    width: 750px;
+    max-width: 100%;
+    position: relative;
+
+    label {
+        display: block;
+        color: $font-color;
+
+        &.required::after {
+            content: "*";
+            color: $danger-color;
+            font-weight: 700;
+            display: inline-block;
+        }
+    }
+
+    textarea.control {
+        height: 100px;
+        padding: 10px;
+    }
+
+    .control {
+        background: #fff;
+        border: 2px solid $control-border-color;
+        border-radius: 3px;
+        width: 70%;
+        height: 36px;
+        display: inline-block;
+        vertical-align: middle;
+        transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 0px 10px;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+
+        &:focus {
+            border-color: $brand-color;
+        }
+
+        &[disabled="disabled"] {
+            border-color: #d3d3d3;
+            background-color: #d3d3d3;
+            cursor: not-allowed;
+        }
+
+        &[multiple] {
+            height: 100px;
+        }
+    }
+
+    &.date, &.datetime {
+        &::after {
+            background-image: url("../images/Icon-Calendar.svg");
+            width: 24px;
+            height: 24px;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: -34px;
+            pointer-events: none;
+            position: absolute;
+            left: 70%;
+            top: 50%;
+        }
+    }
+
+    .control-info {
+        display: block;
+        font-size: 14px;
+        color: #6F6F6F;
+        font-style: italic;
+    }
+
+    .control-error {
+        display: none;
+        color: #ff5656;
+        margin-top: 5px;
+    }
+
+    &.has-error .control {
+        border-color: $danger-color;
+    }
+
+    &.has-error .control-error {
+        display: block;
+    }
+
+    &.price {
+        .currency-code {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+
+.control-group {
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $filter-toggle-color;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: $color-white;
+        -webkit-transition: .2s;
+        transition: .2s;
+    }
+
+    input:checked + .slider {
+        background-color: $brand-color;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px $brand-color;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+
+.button-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-wrapper {
+    width: 300px;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    z-index: 100;
+    text-align: left;
+
+    .alert {
+        width: 300px;
+        padding: 15px;
+        border-radius: 3px;
+        display: inline-block;
+        @include box-shadow(
+                0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1),
+                0px 2px 6px 0px rgba(0, 0, 0, 0.12)
+        );
+        position: relative;
+        animation: jelly 0.5s ease-in-out;
+        transform-origin: center top;
+        z-index: 500;
+        margin-bottom: 10px;
+
+        &.alert-error {
+            background: $danger-color;
+        }
+
+        &.alert-info {
+            background: $info-color;
+        }
+
+        &.alert-success {
+            background: $success-color;
+        }
+
+        &.alert-warning {
+            background: $warning-color;
+        }
+
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #ffffff;
+            margin: 0px;
+            padding: 0px;
+            font-size: 15px;
+        }
+    }
+}
 

@@ -27,4 +27,9 @@ abstract class Repository implements RepositoryInterface
     {
         return $this->model;
     }
+
+    public function getQuery()
+    {
+        return $this->model::orderBy('id', 'ASC');
+    }
 }

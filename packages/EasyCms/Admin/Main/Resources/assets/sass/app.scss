@@ -1,6 +1,9 @@
-// Fonts
+//@import "~bootstrap/scss/bootstrap";
 @import 'partials/fonts';
+@import 'basic/mixins';
+@import 'basic/icons';
 @import 'partials/general';
+@import "partials/datagrid";
 @import 'partials/custom';
 @import 'partials/header';
 @import 'partials/footer';

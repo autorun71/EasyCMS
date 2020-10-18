@@ -2,9 +2,9 @@
 
 namespace Pkg\EasyCms\Admin\Main\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+
 use App\Providers\RouteServiceProvider;
-use Illuminate\Auth\Events\Validated;
+
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -33,7 +33,7 @@ class LoginController extends AdminController
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '';
 
     /**
      * Create a new controller instance.
@@ -44,25 +44,12 @@ class LoginController extends AdminController
     {
         $this->middleware('guest')->except('logout');
         parent::__construct();
+        $this->redirectTo = route('admin.information');
     }
     public function index()
     {
 
         return $this->view('admin::auth.login');
     }
-    /**
-     * Обработка попытки аутентификации.
-     *
-     * @param  Request $request
-     * @return Response
-     */
-    public function authenticate(Request $request)
-    {
-        $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)) {
-            // Аутентификация успешна...
-            return redirect()->intended('dashboard');
-        }
-    }
 }

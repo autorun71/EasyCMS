@@ -1,0 +1,263 @@
+@import '../basic/vars';
+@import '../basic/colors';
+@import '../basic/helpers';
+
+#datagrid-filters {
+    margin-bottom: 20px;
+
+    > * {
+        display: inline-block;
+        vertical-align: top;
+
+        &.search-filter {
+            top: 20px;
+            max-width: 200px;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        &:nth-of-type(2) {
+            width: calc(50% - 10px);
+        }
+
+        &:nth-of-type(3) {
+            width: calc(50% - 220px);
+
+            .control-group {
+                float: right;
+                max-width: 200px;
+            }
+        }
+
+        input,
+        select {
+            height: 38px;
+        }
+    }
+
+    .filter-tag {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .dropdown-filters {
+        .grid-dropdown-header {
+            display: inline-block;
+        }
+
+        .dropdown-list {
+            li {
+                list-style: none;
+            }
+        }
+
+        .dropdown-toggle:after {
+            border: unset;
+        }
+
+        .dropdown-container {
+            width: 100%;
+            display: inline-block !important;
+
+            button {
+                &.btn {
+
+
+                    display: block;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    padding: 5px 10px;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            li {
+                width: 150px;
+                display: inline-block;
+            }
+        }
+
+        .control-group {
+            margin-bottom: 0;
+        }
+    }
+
+    ~ table {
+        &.table {
+            thead {
+                font-size: 18px;
+            }
+
+            tbody {
+                font-size: 16px;
+
+                tr {
+                    td {
+                        a {
+                            display: block;
+                        }
+                    }
+
+                    .badge {
+                        padding: 10px;
+                        font-size: 12px;
+                    }
+
+                    .action {
+                        a {
+                        }
+
+                        .eye-icon {
+
+
+                            font-size: 24px;
+                            padding-left: 10px;
+
+                            &:hover {
+                                color: $link-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ui
+.grid-container {
+    .filter-row-one .search-filter {
+        border: 2px solid #c7c7c7;
+        border-radius: 2px;
+
+        .control {
+            border: none;
+            padding-right: 10px;
+        }
+
+        .icon-wrapper {
+            border: none;
+            padding-top: 2px;
+            padding-right: 5px;
+            border-right: 2px solid #c7c7c7;
+            border-radius: 0px;
+        }
+    }
+
+    .filter-row-two .filter-tag {
+        .wrapper,
+        .icon.cross-icon {
+            margin-right: 10px;
+            margin-left: 0px;
+        }
+    }
+
+    .filter-row-one .dropdown-filters {
+        right: unset;
+        position: static !important;
+        left: 25px;
+
+        .per-page-label {
+            position: static !important;
+        }
+    }
+}
+
+.grid-container
+.filter-wrapper
+.filter-row-one
+.dropdown-filters
+.more-filters
+.dropdown-toggle
+.dropdown-header
+span {
+    padding-right: 5px;
+}
+
+.grid-container .table tbody td.action a:first-child {
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.table table {
+    text-align: right;
+
+    .massaction-remove {
+        margin-right: 5px !important;
+        margin-left: 10px;
+    }
+
+    .btn.btn-primary {
+        margin-right: 10px !important;
+    }
+}
+
+.dropdown-list.bottom-right {
+    left: 0px;
+    right: auto;
+}
+
+.dropdown-list .dropdown-container {
+    text-align: right;
+}
+
+.accordian .accordian-header .icon {
+    float: left;
+}
+
+.tree-container .tree-item {
+    padding-right: 30px;
+
+    .expand-icon,
+    .folder-icon {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+}
+
+.tree-container > .tree-item {
+    padding-right: 0px;
+}
+
+.radio .radio-view {
+    margin-left: 5px;
+}
+
+.image-wrapper .image-item {
+    margin-right: 0px;
+    margin-left: 20px;
+
+    .remove-image {
+        margin-right: 0px;
+    }
+}
+
+.control-group label.required::before {
+    content: "*";
+    color: #fc6868;
+    font-weight: 700;
+}
+
+.control-group label.required::after {
+    content: none;
+}
+
+.control-group label .locale {
+    float: left;
+}
+
+.control-group.date {
+    &::after {
+        margin-top: 15px;
+        position: absolute;
+        margin-right: -35px;
+    }
+}
+
+.pagination .page-item .icon {
+    transform: rotate(180deg);
+}

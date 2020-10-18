@@ -23,6 +23,8 @@ class AdminServiceProvider extends ServiceProvider
             ->group(__DIR__ . '/../Http/Routes/login.php');
 
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'admin');
+        $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'admin');
+
 
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
         $this->registerProviders();

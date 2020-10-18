@@ -6,6 +6,9 @@ $adminBlock: 100px;
 
 .admin-wrapper {
     display: flex;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 120px);
 
     .left-menu {
         width: $adminBlock;
@@ -13,10 +16,12 @@ $adminBlock: 100px;
         height: 100%;
         background: #f3f3f3ab;
         box-shadow: 0px 3px 11px 0px #898992;
+
         a {
             color: #000;
             text-decoration: none;
         }
+
         .block {
             display: flex;
             justify-content: center;
@@ -34,8 +39,10 @@ $adminBlock: 100px;
                 background: #1f273c1c;
                 box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
             }
+
             .content {
                 text-align: center;
+
                 .logo {
                     display: flex;
                     align-items: center;
@@ -49,6 +56,7 @@ $adminBlock: 100px;
 
                     }
                 }
+
                 .text {
                     margin-top: 5px;
 
@@ -59,10 +67,99 @@ $adminBlock: 100px;
             }
 
         }
+
+        &-children {
+            width: 200px;
+            background: #f8f9fa;
+            border-right: 1px solid hsla(0, 0%, 63.5%, .2);
+            position: relative;
+            ul {
+                margin: 0;
+                padding: 0;
+                overflow-y: auto;
+                list-style: none;
+
+                li {
+
+                    &.active {
+                        a {
+                            background: #fff;
+                            border-top: 1px solid hsla(0,0%,63.5%,.2);
+                            border-bottom: 1px solid hsla(0,0%,63.5%,.2);
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        padding: 15px;
+                        display: block;
+                        color: #000311;
+
+
+                    }
+                }
+
+            }
+
+            .close-menu {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 18px;
+                height: 30px;
+                background: #fff;
+                right: -11px;
+                top: calc(50% - 20px);
+                border: 1px solid #d0d0d0;
+                border-radius: 50px;
+                cursor: pointer;
+
+                &:hover {
+                    box-shadow: 0 0 10px 0px rgb(24 27 68 / 13%) inset;
+                }
+
+                span {
+                    color: #d0d0d0;
+                }
+            }
+        }
     }
 
     .content {
         margin: $marginContent;
+        .tabs {
+            border-bottom: 1px solid #cecece;
+
+            overflow-x: auto;
+
+            ul {
+                display: inline-flex;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+
+                width: calc(100vw - 300px - 30px);
+                overflow-x: auto;
+                height: 32px;
+
+                li {
+                    margin-right: $marginContent;
+                    &.active {
+                        a {
+                            border-bottom: 2px solid red;
+                            //font-weight: 500;
+                        }
+                    }
+
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        padding: 9px 15px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
         .page-title {
             h1 {
 

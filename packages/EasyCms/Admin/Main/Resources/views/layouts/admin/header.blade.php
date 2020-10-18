@@ -16,6 +16,15 @@
     </div>
 </div>
 <div class="admin-wrapper">
+
+    @auth
     @include('admin::layouts.admin.left-sidebar')
+    <div class="content">
+        @include('admin::layouts.admin.tabs')
+
+        <div class="page-title">
+            <h1>Информация</h1>
+        </div>
+    @endif
 
 

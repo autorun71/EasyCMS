@@ -1,10 +1,6 @@
 /node_modules
 /public/hot
-/public/css/*
-/public/js/*
-/public/assets/js/*
-/public/assets/css/*
-/public/assets/images/*
+
 
 /public/storage
 /storage/*.key

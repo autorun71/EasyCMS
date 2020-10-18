@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: local('PF Centro Sans Pro Regular'), local('PF-Centro-Sans-Pro-Regular'),
+        url('PFCentroSansPro-Regular.woff2') format('woff2'),
+        url('PFCentroSansPro-Regular.woff') format('woff'),
+        url('PFCentroSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

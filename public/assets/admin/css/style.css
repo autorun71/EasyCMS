@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "PF Centro Sans Pro XThin";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-XThinItalic.eot");
+  src: local("PFCentroSansPro-XThinItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThinItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThinItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-LightItalic.eot");
+  src: local("PFCentroSansPro-LightItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-LightItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-LightItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Thin.eot");
+  src: local("PFCentroSansPro-Thin"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Thin.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Thin.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-ThinItalic.eot");
+  src: local("PFCentroSansPro-ThinItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-ThinItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-ThinItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Black.eot");
+  src: local("PFCentroSansPro-Black"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Black.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Black.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-BoldItalic.eot");
+  src: local("PFCentroSansPro-BoldItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BoldItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BoldItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Medium.eot");
+  src: local("PFCentroSansPro-Medium"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Medium.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Medium.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-BlackItalic.eot");
+  src: local("PFCentroSansPro-BlackItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BlackItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BlackItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-MediumItalic.eot");
+  src: local("PFCentroSansPro-MediumItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-MediumItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-MediumItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Light.eot");
+  src: local("PFCentroSansPro-Light"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Light.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Light.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro UBlack";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlackItalic.eot");
+  src: local("PFCentroSansPro-UBlackItalic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlackItalic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlackItalic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro UBlack";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlack.eot");
+  src: local("PFCentroSansPro-UBlack"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlack.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlack.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-UBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Regular.eot");
+  src: local("PFCentroSansPro-Regular"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Regular.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Regular.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Bold.eot");
+  src: local("PFCentroSansPro-Bold"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Bold.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Bold.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-Italic.eot");
+  src: local("PFCentroSansPro-Italic"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Italic.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Italic.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PF Centro Sans Pro XThin";
+  src: url("../fonts/PFCentroSansPro/PFCentroSansPro-XThin.eot");
+  src: local("PFCentroSansPro-XThin"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThin.woff2") format("woff2"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThin.woff") format("woff"), url("../fonts/PFCentroSansPro/PFCentroSansPro-XThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+.pointer {
+  cursor: pointer;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "PF Centro Sans Pro";
+  min-height: 100vh;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "PF Centro Sans Pro";
+  min-height: 100vh;
+}
+
+/**
+ * Custom radio
+ */
+/**
+ * Custom checkbox
+ */
+.form-check-input {
+  display: none;
+}
+.form-check-input:checked + .form-check-label:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #000;
+  text-align: center;
+  line-height: 15px;
+}
+.form-check-label {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.form-check-label:hover {
+  color: #dcdcdc;
+}
+.form-check-label:before {
+  display: block;
+  content: " ";
+  border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  color: #f3f3f3;
+  text-align: center;
+  line-height: 15px;
+  margin-right: 5px;
+}
+
+.btn {
+  padding: 7px;
+  font-size: 17px;
+  outline: none;
+  border-radius: 6px;
+  border: 0px solid #fff;
+  min-width: 53px;
+  width: 60px;
+}
+.btn-red {
+  background: red;
+  color: #fff;
+}
+.btn-red:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-green {
+  background: red;
+  color: #fff;
+}
+.btn-green:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  height: 60px;
+  background: #11111d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+.header .top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header .top-menu div {
+  padding: 5px;
+}
+.header .top-menu div.left-content {
+  margin: 15px;
+}
+.header .top-menu div.left-content .site-name {
+  font-size: 22px;
+  text-shadow: 1px 1px 7px #202134, 0 0 2px #514d4d;
+}
+.header .top-menu div.right-content {
+  margin: 15px;
+}
+.header .top-menu div.right-content .user-name {
+  font-size: 18px;
+  text-shadow: 1px 1px 7px #202134, 0 0 2px #514d4d;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background: #11111d;
+  z-index: 100;
+}
+.footer span {
+  color: #fff;
+}
+.footer span a {
+  color: #509cfc;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.admin-wrapper {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 120px);
+}
+.admin-wrapper .left-menu {
+  width: 100px;
+  border-right: 1px solid #dcdce3;
+  height: 100%;
+  background: #f3f3f3ab;
+  box-shadow: 0px 3px 11px 0px #898992;
+}
+.admin-wrapper .left-menu a {
+  color: #000;
+  text-decoration: none;
+}
+.admin-wrapper .left-menu .block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-bottom: 1px solid #dcdce3;
+  cursor: pointer;
+}
+.admin-wrapper .left-menu .block:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.admin-wrapper .left-menu .block.active {
+  background: #1f273c1c;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.admin-wrapper .left-menu .block .content {
+  text-align: center;
+}
+.admin-wrapper .left-menu .block .content .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-wrapper .left-menu .block .content .logo img {
+  width: auto;
+  height: auto;
+  max-width: 30px;
+  max-height: 30px;
+}
+.admin-wrapper .left-menu .block .content .text {
+  margin-top: 5px;
+}
+.admin-wrapper .left-menu-children {
+  width: 200px;
+  background: #f8f9fa;
+  border-right: 1px solid rgba(162, 162, 162, 0.2);
+  position: relative;
+}
+.admin-wrapper .left-menu-children ul {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+.admin-wrapper .left-menu-children ul li.active a {
+  background: #fff;
+  border-top: 1px solid rgba(162, 162, 162, 0.2);
+  border-bottom: 1px solid rgba(162, 162, 162, 0.2);
+}
+.admin-wrapper .left-menu-children ul li a {
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  color: #000311;
+}
+.admin-wrapper .left-menu-children .close-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 30px;
+  background: #fff;
+  right: -11px;
+  top: calc(50% - 20px);
+  border: 1px solid #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.admin-wrapper .left-menu-children .close-menu:hover {
+  box-shadow: 0 0 10px 0px rgba(24, 27, 68, 0.13) inset;
+}
+.admin-wrapper .left-menu-children .close-menu span {
+  color: #d0d0d0;
+}
+.admin-wrapper .content {
+  margin: 15px;
+}
+.admin-wrapper .content .tabs {
+  border-bottom: 1px solid #cecece;
+  overflow-x: auto;
+}
+.admin-wrapper .content .tabs ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: calc(100vw - 300px - 30px);
+  overflow-x: auto;
+  height: 32px;
+}
+.admin-wrapper .content .tabs ul li {
+  margin-right: 15px;
+}
+.admin-wrapper .content .tabs ul li.active a {
+  border-bottom: 2px solid red;
+}
+.admin-wrapper .content .tabs ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 9px 15px;
+  font-size: 18px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 400px;
+  color: #fff;
+  height: 400px;
+  text-align: center;
+}
+.login-form a {
+  color: #509cfc;
+}
+.login-form-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+  background: #11111d;
+}
+.login-form-card .card-body .form-group label {
+  display: block;
+  font-size: 20px;
+  margin: 10px;
+}
+.login-form-card .card-body .form-group input.form-control {
+  padding: 7px;
+  width: 250px;
+  font-size: 17px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+.login-form-card .card-body .form-group .btn {
+  width: 266px;
+  margin-top: 5px;
+}
+.login-form-card .card-header span {
+  font-size: 30px;
+  font-weight: 500;
+}

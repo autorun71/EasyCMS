@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'PF Centro Sans Pro XThin';
+    src: url('PFCentroSansPro-XThinItalic.eot');
+    src: local('PFCentroSansPro-XThinItalic'),
+        url('PFCentroSansPro-XThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-XThinItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-XThinItalic.woff') format('woff'),
+        url('PFCentroSansPro-XThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-LightItalic.eot');
+    src: local('PFCentroSansPro-LightItalic'),
+        url('PFCentroSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-LightItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-LightItalic.woff') format('woff'),
+        url('PFCentroSansPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Thin.eot');
+    src: local('PFCentroSansPro-Thin'),
+        url('PFCentroSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Thin.woff2') format('woff2'),
+        url('PFCentroSansPro-Thin.woff') format('woff'),
+        url('PFCentroSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-ThinItalic.eot');
+    src: local('PFCentroSansPro-ThinItalic'),
+        url('PFCentroSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-ThinItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-ThinItalic.woff') format('woff'),
+        url('PFCentroSansPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Black.eot');
+    src: local('PFCentroSansPro-Black'),
+        url('PFCentroSansPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Black.woff2') format('woff2'),
+        url('PFCentroSansPro-Black.woff') format('woff'),
+        url('PFCentroSansPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-BoldItalic.eot');
+    src: local('PFCentroSansPro-BoldItalic'),
+        url('PFCentroSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-BoldItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-BoldItalic.woff') format('woff'),
+        url('PFCentroSansPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Medium.eot');
+    src: local('PFCentroSansPro-Medium'),
+        url('PFCentroSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Medium.woff2') format('woff2'),
+        url('PFCentroSansPro-Medium.woff') format('woff'),
+        url('PFCentroSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-BlackItalic.eot');
+    src: local('PFCentroSansPro-BlackItalic'),
+        url('PFCentroSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-BlackItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-BlackItalic.woff') format('woff'),
+        url('PFCentroSansPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-MediumItalic.eot');
+    src: local('PFCentroSansPro-MediumItalic'),
+        url('PFCentroSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-MediumItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-MediumItalic.woff') format('woff'),
+        url('PFCentroSansPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Light.eot');
+    src: local('PFCentroSansPro-Light'),
+        url('PFCentroSansPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Light.woff2') format('woff2'),
+        url('PFCentroSansPro-Light.woff') format('woff'),
+        url('PFCentroSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro UBlack';
+    src: url('PFCentroSansPro-UBlackItalic.eot');
+    src: local('PFCentroSansPro-UBlackItalic'),
+        url('PFCentroSansPro-UBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-UBlackItalic.woff2') format('woff2'),
+        url('PFCentroSansPro-UBlackItalic.woff') format('woff'),
+        url('PFCentroSansPro-UBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro UBlack';
+    src: url('PFCentroSansPro-UBlack.eot');
+    src: local('PFCentroSansPro-UBlack'),
+        url('PFCentroSansPro-UBlack.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-UBlack.woff2') format('woff2'),
+        url('PFCentroSansPro-UBlack.woff') format('woff'),
+        url('PFCentroSansPro-UBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Regular.eot');
+    src: local('PFCentroSansPro-Regular'),
+        url('PFCentroSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Regular.woff2') format('woff2'),
+        url('PFCentroSansPro-Regular.woff') format('woff'),
+        url('PFCentroSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Bold.eot');
+    src: local('PFCentroSansPro-Bold'),
+        url('PFCentroSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Bold.woff2') format('woff2'),
+        url('PFCentroSansPro-Bold.woff') format('woff'),
+        url('PFCentroSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro';
+    src: url('PFCentroSansPro-Italic.eot');
+    src: local('PFCentroSansPro-Italic'),
+        url('PFCentroSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-Italic.woff2') format('woff2'),
+        url('PFCentroSansPro-Italic.woff') format('woff'),
+        url('PFCentroSansPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Centro Sans Pro XThin';
+    src: url('PFCentroSansPro-XThin.eot');
+    src: local('PFCentroSansPro-XThin'),
+        url('PFCentroSansPro-XThin.eot?#iefix') format('embedded-opentype'),
+        url('PFCentroSansPro-XThin.woff2') format('woff2'),
+        url('PFCentroSansPro-XThin.woff') format('woff'),
+        url('PFCentroSansPro-XThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+

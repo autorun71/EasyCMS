@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Pkg\EasyCms\Admin\Main\Http\Controllers\MainController;
+use Pkg\EasyCms\Admin\Main\Http\Controllers\Settings\SettingsController;
 
 
-Route::get('/', [MainController::class, 'index'])->name('admin.index');
+Route::get('/', [MainController::class, 'index'])->name('admin.information');
+Route::get('/settings', [SettingsController::class, 'index'])->name('admin.settings');
 
 
 

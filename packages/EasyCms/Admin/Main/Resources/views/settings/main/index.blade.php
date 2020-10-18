@@ -8,7 +8,7 @@
 @section('js')
 @stop
 @section('page_title')
-    Информация
+    Основные настройки
 @endsection
 @section('content')
 

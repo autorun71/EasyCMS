@@ -8,10 +8,18 @@ return [
         ],
         'shop' => [
             'title' => 'Магазин',
+
             'categories' => 'Категории',
             'products' => 'Товары',
             'properties' => 'Свойства'
-        ]
+        ],
+        'settings' => [
+            'title' => 'Настройки',
+
+            'general' => 'Основные',
+            'users' => 'Пользователи',
+        ],
+
     ],
     'form' => [
         'save' => 'Сохранить',

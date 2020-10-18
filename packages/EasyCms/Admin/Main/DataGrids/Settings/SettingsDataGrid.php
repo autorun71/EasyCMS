@@ -118,12 +118,7 @@ class SettingsDataGrid extends DataGrid
 
     public function prepareActions()
     {
-//        $this->addAction([
-//            'title' => trans('region::app.section.main.edit'),
-//            'method' => 'GET',
-//            'route' => 'admin.settings.main.site',
-//            'icon' => 'icon pencil-lg-icon',
-//        ]);
+
 
 
     }

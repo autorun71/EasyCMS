@@ -15,7 +15,7 @@ class AdminServiceProvider extends ServiceProvider
         include __DIR__ . '/../Http/Helpers/helpers.php';
 
         Route::prefix('admin')
-            ->middleware('auth.admin')
+            ->middleware('admin')
             ->group(__DIR__ . '/../Http/Routes/web.php');
 
         Route::prefix('admin')
@@ -30,6 +30,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->registerProviders();
 
         $this->composeView();
+        $this->registerACL();
     }
 
     /**
@@ -55,6 +56,38 @@ class AdminServiceProvider extends ServiceProvider
 
     private function registerProviders()
     {
+        $this->app->register(UserServiceProvider::class);
+    }
+
+    public function registerACL()
+    {
+        $this->app->singleton('acl', function () {
+            return $this->createACL();
+        });
+    }
+
+    /**
+     * Create acl tree
+     *
+     * @return mixed
+     */
+    public function createACL()
+    {
+        static $tree;
+
+        if ($tree) {
+            return $tree;
+        }
+
+        $tree = Tree::create();
+
+        foreach (config('acl') as $item) {
+            $tree->add($item, 'acl');
+        }
+
+        $tree->items = \core()->sortItems($tree->items);
+
+        return $tree;
     }
 
     protected function composeView()
@@ -65,16 +98,16 @@ class AdminServiceProvider extends ServiceProvider
              * @var Tree $tree
              */
             $tree = Tree::create();
+
             $iconPath = '/assets/admin/images/menu/'; // Исходники в Resources/assets/images/menu
-//            $permissionType = auth()->guard('auth')->user()->role->permission_type;
-//            $allowedPermissions = auth()->guard('auth')->user()->role->permissions;
-            $permissionType = 'all';
-            $allowedPermissions = [];
+            $permissionType = auth()->guard('web')->user()->role->permission_type;
+            $allowedPermissions = auth()->guard('web')->user()->role->permissions;
+
             foreach (config('menu.admin') as $index => $item) {
 
-//                if (! bouncer()->hasPermission($item['key'])) {
-//                    continue;
-//                }
+                if (! bouncer()->hasPermission($item['key'])) {
+                    continue;
+                }
 
                 if ($index + 1 < count(config('menu.admin')) && $permissionType != 'all') {
                     $permission = config('menu.admin')[$index + 1];

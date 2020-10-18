@@ -9,9 +9,14 @@
 @stop
 @section('page_title')
     Основные настройки
-@endsection
+@stop
 @section('content')
 
-    Информация о странице
-@endsection
+    @inject('settings','Pkg\EasyCms\Admin\Main\DataGrids\Settings\SettingsDataGrid')
 
+    {!! $settings->render() !!}
+@stop
+
+@push('scripts')
+
+@endpush

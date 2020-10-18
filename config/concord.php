@@ -1,6 +1,6 @@
 <?php
 
-use Pkg\EasyCms\Admin\Core\Providers\ModuleServiceProvider;
+//use Pkg\EasyCms\Admin\Core\Providers\ModuleServiceProvider;
 
 return [
     'modules' => [
@@ -13,8 +13,6 @@ return [
 
 //        ModuleServiceProvider::class,
 
-//        \Webkul\Attribute\Providers\ModuleServiceProvider::class,
-//        \Webkul\Category\Providers\ModuleServiceProvider::class,
-//        \Webkul\Core\Providers\ModuleServiceProvider::class,
+
     ]
 ];

@@ -1,6 +1,36 @@
-// import './bootstrap';
+import Vue from 'vue';
+import VeeValidate from 'vee-validate';
 
-document.addEventListener('DOMContentLoaded', function () {
+import './bootstrap';
+
+window.Vue = Vue;
+window.VeeValidate = VeeValidate;
+
+
+Vue.prototype.$http = axios
+
+window.eventBus = new Vue();
+
+$(document).ready(function () {
+    Vue.config.ignoredElements = [
+        'option-wrapper',
+        'group-form',
+        'group-list'
+    ];
+
+    var app = new Vue({
+        el: "#app",
+
+        data: {
+        },
+
+        mounted() {
+        },
+
+        methods: {
+        }
+    });
+
     const hideChildLeftSidebarClose = document.querySelector('.close-menu')
 
     hideChildLeftSidebarClose.addEventListener('click', function (e) {
@@ -26,4 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
     })
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
 })

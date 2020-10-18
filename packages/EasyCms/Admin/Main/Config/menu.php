@@ -34,11 +34,51 @@ return [
 
     [
         'key' => 'settings.general',
-        'name' => 'admin::app.left-sidebar.settings.general',
-        'route' => 'admin.settings',
+        'name' => 'admin::app.left-sidebar.settings.general.title',
+        'route' => 'admin.settings.main.site',
         'sort' => 1,
         'icon-name' => 'settings.png',
     ],
+    [
+        'key' => 'settings.general.site',
+        'name' => 'admin::app.left-sidebar.settings.general.site',
+        'route' => 'admin.settings.main.site',
+        'sort' => 1,
+        'icon-name' => 'settings.png',
+    ],
+    [
+        'key' => 'settings.general.locales',
+        'name' => 'admin::app.left-sidebar.settings.general.locales',
+        'route' => 'admin.settings.main.locales',
+        'sort' => 1,
+        'icon-name' => 'settings.png',
+    ],
+
+    [
+        'key' => 'settings.account',
+        'name' => 'admin::app.left-sidebar.settings.accounts.title',
+        'route' => 'admin.settings.user',
+        'sort' => 1,
+        'icon-name' => 'settings.png',
+    ],
+
+    [
+        'key' => 'settings.account.users',
+        'name' => 'admin::app.left-sidebar.settings.accounts.users',
+        'route' => 'admin.settings.user',
+        'sort' => 1,
+        'icon-name' => 'settings.png',
+    ],
+
+    [
+        'key' => 'settings.account.roles',
+        'name' => 'admin::app.left-sidebar.settings.accounts.roles',
+        'route' => 'admin.settings.role',
+        'sort' => 1,
+        'icon-name' => 'settings.png',
+    ],
+
+
 
 
 

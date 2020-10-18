@@ -9,5 +9,5 @@ Route::get('/login', [LoginController::class, 'index'])->name('admin.login');
 
 
 //Route::get('login', [LoginController::class, 'showLoginForm'])->name('admin.login');
-//Route::post('login', [LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'login']);
 

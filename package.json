@@ -20,7 +20,16 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.20.1",
         "sass-loader": "^8.0.0",
-        "vue": "^2.5.17",
-        "vue-template-compiler": "^2.6.10"
+        "vue": "^2.6.12",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "vee-validate": "^3.4.2",
+        "opencollective-postinstall": "^2.0.1",
+        "opencollective": "^1.0.3"
+    },
+    "collective": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/bagisto"
     }
 }

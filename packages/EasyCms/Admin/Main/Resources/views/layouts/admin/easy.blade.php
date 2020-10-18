@@ -11,11 +11,14 @@
     @yield('css')
 </head>
 <body>
-
+<div id="app">
 @include ('admin::layouts.admin.header')
 @yield('content')
 @include ('admin::layouts.admin.footer')
+</div>
 <script src="{{ asset('assets/admin/js/script.js') }}"></script>
 @yield('js')
+
+@stack('scripts')
 </body>
 </html>

@@ -126,7 +126,7 @@
                                     </div>
                                 </li>
 
-                                <button class="btn btn-sm btn-primary apply-filter" v-on:click="getResponse">{{ __('admin::app.datagrid.apply') }}</button>
+                                <button class="btn btn-lg btn-primary apply-filter" v-on:click="getResponse">{{ __('admin::app.datagrid.apply') }}</button>
                             </ul>
                         </div>
                     </div>

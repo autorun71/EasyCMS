@@ -446,6 +446,11 @@ html, body {
   min-height: 100vh;
 }
 
+a {
+  color: #4D7EA8;
+  text-decoration: none;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -647,14 +652,6 @@ html, body {
   cursor: pointer;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: "PF Centro Sans Pro";
-  min-height: 100vh;
-}
-
 /**
  * Custom radio
  */
@@ -704,6 +701,8 @@ html, body {
   border: 0px solid #fff;
   min-width: 53px;
   width: 60px;
+  cursor: pointer;
+  text-align: center;
 }
 .btn-red {
   background: red;
@@ -718,6 +717,13 @@ html, body {
 }
 .btn-green:hover {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.btn-lg {
+  width: 120px;
+}
+.btn-primary {
+  background: #3f60e3;
+  color: #fff;
 }
 
 .table {
@@ -1213,4 +1219,9 @@ html, body {
 .login-form-card .card-header span {
   font-size: 30px;
   font-weight: 500;
+}
+
+.page-action {
+  display: flex;
+  justify-content: flex-end;
 }

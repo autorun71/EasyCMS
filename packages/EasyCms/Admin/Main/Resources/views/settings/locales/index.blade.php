@@ -10,6 +10,9 @@
 @section('page_title')
     Настройка региона
 @endsection
+@section('page_name')
+    Настройка региона
+@stop
 @section('content')
 
     Информация о странице

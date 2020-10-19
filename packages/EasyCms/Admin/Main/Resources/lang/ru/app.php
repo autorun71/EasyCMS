@@ -36,6 +36,10 @@ return [
         'create' => 'Создать',
         'update' => 'Обновить',
         'delete' => 'Удалить',
+
+        'create-error' => 'Ошибка сохранения',
+        'create-success' => 'Успешно сохранено',
+
     ],
 
     'tables' => [
@@ -51,6 +55,13 @@ return [
         ],
         'roles' => [
             'permission-type' => 'Тип'
+        ],
+        'users' => [
+            'name' => 'Имя',
+
+            'add' => 'Длбавить пользователя',
+            'password-match' => 'Пароли не совпадают!',
+
         ]
     ],
 
@@ -75,10 +86,14 @@ return [
         'name' => 'Название',
         'status' => 'Статус',
         'active' => 'Активен',
-        'inactive' => 'Деактивирован', 
+        'inactive' => 'Деактивирован',
         'enable' => 'Статус',
         'email' => 'E-Mail',
-        'role' => 'Права доступа'
+        'role' => 'Права доступа',
+        'password' => 'Пароль',
+        'confirm-password' => 'Подтвердите пароль',
+
+
     ]
 
 ];

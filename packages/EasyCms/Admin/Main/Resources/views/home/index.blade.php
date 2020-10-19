@@ -10,6 +10,9 @@
 @section('page_title')
     Информация
 @endsection
+@section('page_name')
+    Информация
+@stop
 @section('content')
 
     Информация о странице

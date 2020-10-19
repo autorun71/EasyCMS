@@ -8,7 +8,10 @@
 @section('js')
 @stop
 @section('page_title')
-    Основные настройки
+    Управление доступом
+@stop
+@section('page_name')
+    Управление доступом
 @stop
 @section('content')
 

@@ -1,16 +1,20 @@
 <?php
 
 
-namespace App\Interfaces;
+namespace App\Contracts\Repository;
 
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
 interface RepositoryInterface
 {
     /**
      * Метод инициализирует модель для дальнейшей работы с репозиторием
-     * @return Model
+     * @return string
      */
-    function setModel();
+
+    function setModel(): string;
+
+    function getAll(): Collection;
 }

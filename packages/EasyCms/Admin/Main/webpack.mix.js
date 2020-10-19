@@ -20,6 +20,7 @@ mix.js(
     ],
     "js/script.js"
 )
+    .copy(__dirname + "/Resources/assets/icons", publicPath + "/images")
     .copy(__dirname + "/Resources/assets/images", publicPath + "/images")
     .copy(__dirname + "/Resources/assets/sass/fonts", publicPath + "/fonts")
     .sass(__dirname + "/Resources/assets/sass/app.scss", publicPath + "/css/style.css")

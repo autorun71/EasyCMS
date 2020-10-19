@@ -8,13 +8,30 @@
 @section('js')
 @stop
 @section('page_title')
-    Основные настройки
+    Учетные записи
+@stop
+@section('page_name')
+    Учетные записи
 @stop
 @section('content')
+    <div class="content">
+        <div class="page-header">
+            <div class="page-action">
+                <a href="{{ route('admin.settings.user.create') }}" class="btn btn-lg btn-primary">
+                    {{ __('admin::app.form.create') }}
+                </a>
+            </div>
+        </div>
 
-    @inject('user','Pkg\EasyCms\Admin\Main\DataGrids\User\UserDataGrid')
+        <div class="page-content">
 
-    {!! $user->render() !!}
+            @inject('user','Pkg\EasyCms\Admin\Main\DataGrids\User\UserDataGrid')
+
+            {!! $user->render() !!}
+            {{-- <datetime></datetime> --}}
+        </div>
+    </div>
+
 @stop
 
 @push('scripts')

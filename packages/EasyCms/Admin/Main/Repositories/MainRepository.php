@@ -15,7 +15,7 @@ class MainRepository extends Repository
     /**
      * @inheritDoc
      */
-    function setModel()
+    function setModel(): string
     {
         return Main::class;
     }

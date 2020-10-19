@@ -23,7 +23,7 @@
         @include('admin::layouts.admin.tabs')
 
         <div class="page-title">
-            <h1>@yield('page_title')</h1>
+            <h1>@yield('page_name')</h1>
         </div>
     @endif
 
